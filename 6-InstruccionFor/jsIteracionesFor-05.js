@@ -1,7 +1,16 @@
-function mostrar()
-{
-	alert("ok");
+function mostrar() {
 
+	let numero;
 
+	for (; ;) {
+		numero = prompt("Ingrese um número:");
 
-}//FIN DE LA FUNCIÓN
+		if (numero == 9) {
+			break;
+		}
+	}
+
+	document.write (
+		`<h1 style = "color:red"> CORRECTO!! (diría Susana Gimenez)<h1>
+	`)
+}

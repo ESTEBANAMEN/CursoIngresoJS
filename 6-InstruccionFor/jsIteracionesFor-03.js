@@ -1,8 +1,15 @@
-function mostrar()
-{
+function mostrar() {
 
-	var repetciones = prompt("ingrese el número de repeticiones");
-	alert("ok");
+	let i;
+	let mensaje = "Hola UTN FRA";
 
+	i = prompt("Ingrese la cantidad deseada de iteraciones:");
 
-}//FIN DE LA FUNCIÓN
+	while (isNaN(i)) {
+		i = prompt("ERROR!!Ingrese la cantidad deseada de iteraciones:");
+	}
+
+	for (i ; i > 0 ; i--) {
+		document.write("<b>" + mensaje + "</b>" + " " + i + "<br>")
+	}
+}

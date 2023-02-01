@@ -1,19 +1,39 @@
 /*
 Al presionar el botón pedir  números  hasta que el usuario quiera,
 sumar los que son positivos y multiplicar los negativos.*/
-function mostrar()
-{
-	var contador;
-	var respuesta;
-	var sumaPositivos;
-	var multiplicacionNegativos;
-	contador=0;
-	sumaPositivos=0;
-	multiplicacionNegativos=1;
-	respuesta='si';
+function mostrar() {
+	let numero;
+	let seguir;
+	let acumuladorPositivos = 0;
+	let productoNegativos = 1;
+	let i = 0;
 
+	do {
+		numero = prompt("Ingrese un numero:");
 
-	txtIdSuma.value=sumaPositivos;
-	txtIdProducto.value=multiplicacionNegativos;
+		while (isNaN(numero)) {
+			numero = prompt("ERROR!! Ingrese un numero:");
+		}
 
-}//FIN DE LA FUNCIÓN
+		if (numero > -1) {
+			acumuladorPositivos += parseFloat(numero);
+		} else {
+			productoNegativos *= parseFloat(numero);
+		}
+
+		i++;
+
+		seguir = prompt("Quiere ingresar otro numero? \nSi = 's'.\nNo = tecla cualquiera");
+
+	} while (seguir == 's');
+
+	document.getElementById('txtIdSuma').value = acumuladorPositivos;
+	
+	if (productoNegativos != 1) {
+	document.getElementById('txtIdProducto').value = productoNegativos;
+	} else {
+		document.getElementById('txtIdProducto').value = "No se ingresaron numeros negativos!";
+	}
+
+	alert(`La iteración dio ${i} vueltas!!`);
+}
