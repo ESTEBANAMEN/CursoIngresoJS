@@ -1,13 +1,14 @@
-function mostrar()
-{
-	//tomo la edad  
-	var edad 
+/*
+Esteban Juan Amén
+		Div - F
+Ejercicio 1 - IF;
+*/ 
+function mostrar() {
+	let edad;
 
-	edad=document.getElementById('txtIdEdad').value;
+	edad = parseInt(document.getElementById('txtIdEdad').value);
 
-	if(edad==15)
-	{
-		alert("niña bonita");
+	if (edad == 15) {
+		alert("Niña bonita!!");
 	}
-
 }

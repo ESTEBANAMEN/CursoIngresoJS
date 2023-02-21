@@ -1,15 +1,15 @@
-/*Esteban Amen
-Al ingresar una edad debemos informar solo si la persona
-es mayor de edad*/
+/*
+Esteban Juan Amen
+	Div - F
+Ejercicio 2 - IF;
+*/
 
-function mostrar()
-{ 
-	var edad;
+function mostrar() { 
+	let edad;
 
-	edad=document.getElementById('txtIdEdad').value;
+	edad = parseInt(document.getElementById('txtIdEdad').value);
 
-	if(edad>17)
-	{
-		alert("usted es mayor de edad");
+	if (edad > 17) {
+		alert("Usted es mayor de edad");
 	}
 }

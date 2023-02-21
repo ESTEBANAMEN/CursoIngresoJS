@@ -1,6 +1,12 @@
+/*
+Esteban Juan Amén
+	DIV - F
+Ejercicio 1 - for;
+*/
 function mostrar() {
-	
-	for (let i = 1 ; i < 11 ; i++) {
+	let i = 1;
+
+	for (i; i < 11; i++) {
 		document.write(i + "<br>");
 	}
 }

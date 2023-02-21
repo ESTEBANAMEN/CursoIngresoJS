@@ -1,18 +1,23 @@
-/*IF 4
-ESTEBAN AMEN
-Al ingresar una edad debemos informar si la persona es
-adolescente, edad entre 13 y 17 años (inclusive) .*/
-function mostrar()
-{
-	var edad;
-	edad=document.getElementById('txtIdEdad').value;
-	edad=parseInt(edad);
+/*
+Esteban Juan Amén
+	Div - F
+Ejercicio 4 - IF;
+*/
+function mostrar() {
+	let edad;
 
-	if(edad>12)
-	{
-		if(edad<18)
-		{
-			alert("Usted es un adolescente");			
-		}
+	edad = parseInt(document.getElementById('txtIdEdad').value);
+
+	if (edad > 12 && edad < 18) {
+		alert("Usted es un adolescente!!");
 	}
 }
+
+/*
+if (edad < 18) {
+	if (edad > 12) {
+		alert("Usted es un adolescente!!");
+	}
+}
+}
+*/ 

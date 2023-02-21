@@ -1,4 +1,8 @@
 /*
+	Esteban Juan Amén
+		Div - F
+   Ejercicio 8 - while;
+
 Al presionar el botón pedir  números  hasta que el usuario quiera,
 sumar los que son positivos y multiplicar los negativos.*/
 function mostrar() {
@@ -9,31 +13,28 @@ function mostrar() {
 	let i = 0;
 
 	do {
-		numero = prompt("Ingrese un numero:");
-
+		numero = parseInt(prompt("Ingrese un numero:"));
 		while (isNaN(numero)) {
 			numero = prompt("ERROR!! Ingrese un numero:");
 		}
 
 		if (numero > -1) {
-			acumuladorPositivos += parseFloat(numero);
+			acumuladorPositivos += numero;
 		} else {
-			productoNegativos *= parseFloat(numero);
+			productoNegativos *= numero;
 		}
 
 		i++;
-
 		seguir = prompt("Quiere ingresar otro numero? \nSi = 's'.\nNo = tecla cualquiera");
-
 	} while (seguir == 's');
 
 	document.getElementById('txtIdSuma').value = acumuladorPositivos;
-	
+
 	if (productoNegativos != 1) {
-	document.getElementById('txtIdProducto').value = productoNegativos;
+		document.getElementById('txtIdProducto').value = productoNegativos;
 	} else {
 		document.getElementById('txtIdProducto').value = "No se ingresaron numeros negativos!";
 	}
 
-	alert(`La iteración dio ${i} vueltas!!`);
+	alert("La iteración dio " + i + " vueltas!!");
 }

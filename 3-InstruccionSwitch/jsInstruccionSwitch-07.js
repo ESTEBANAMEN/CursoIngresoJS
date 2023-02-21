@@ -1,3 +1,8 @@
+/*
+	Esteban Juan Amén
+		Div - F
+	Ejercicio 7 - switch;
+*/
 function mostrar() {
 	let destino;
 
@@ -5,16 +10,16 @@ function mostrar() {
 
 	switch (destino) {
 		case "Bariloche":
-			alert(`${destino} queda en el ESTE!`);
+			alert("Queda en el OESTE!");
 			break;
 		case "Cataratas":
-			alert(`${destino} queda en el NORTE!`);
+			alert("Queda en el NORTE!");
+			break;
+		case "Mar del plata":
+			alert("Queda en el ESTE!");
 			break;
 		case "Ushuaia":
-			alert(`${destino} queda en el SUR!`);
-			break;
-		default:
-			alert(`${destino} queda en el OESTE!`);
+			alert("Queda en el SUR!");
 			break;
 	}
 }

@@ -1,22 +1,18 @@
-/*IF ejerercicio 5
-ESTEBAN AMEN
-Al ingresar una edad solo debemos
-informar si la persona NO es adolescente.
+/*
+Esteban Juan Amén
+	Div - F
+Ejercicio 5 - IF;
 */
-function mostrar()
-{
-	var edad
-	edad=document.getElementById('txtIdEdad').value;
-	edad=parseInt(edad);
+function mostrar() {
+	let edad;
 
-	if(edad<13)
-	{
-		alert("Usted no es un adolescente");
-	}
-	if(edad>17)
-	{
-		alert("Usted no es un adolescente");
+	edad = parseInt(document.getElementById('txtIdEdad').value);
+
+	if (edad < 13 || edad > 17) {
+		alert("Usted no es Adolescente!!");
 	}
 
-		
+	// if (!(edad > 12 && edad < 18)) {
+	// 	alert("Usted no es  Adolescente!!");
+	// }
 }

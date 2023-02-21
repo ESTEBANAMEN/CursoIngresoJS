@@ -1,27 +1,34 @@
-// al presionar el botón pedir un número, mostrar los numeros divisores desde el 1
-// al número ingresado, y mostrar la cantidad de numeros divisores encontrados.
+/*
+Esteban Juan Amén
+	DIV - F
+Ejercicio 7 - for;
+al presionar el botón pedir un número, mostrar los numeros divisores 
+desde el 1 al número ingresado, y mostrar la cantidad de numeros
+divisores encontrados.
+*/
 function mostrar() {
 	let numero;
 	let i = 1;
-	let contadorDivisores = 0;
-	let flagDivisores = 0;
+	let cantidadDivisores = 0;
 
-	numero = prompt("Ingrese un numero mayor que 1:");
-
-	while (isNaN(numero) || numero < 1) {
-		numero = prompt("ERROR!! Ingrese un numero mayor que 1:");
+	numero = parseInt(prompt("Ingrese su numero:"));
+	while (isNaN(numero)) {
+		numero = parseInt(prompt("ERROR!!ngrese su numero:"));
 	}
 
-	for (i ; i <= numero ; i++ ) {
-		if (numero % i == 0) {
-			contadorDivisores ++;
-			if (flagDivisores == 0) {
-				document.write("DIVISORES:<br>");
-				flagDivisores = 1;
+	if (numero > 0) {
+		for (i ; i <= numero ; i++) {
+			if (numero % i == 0) {
+				cantidadDivisores++;
 			}
-			document.write(i + "<br>");
+		}
+	} else {
+		for (i ; i >= numero ; i--) {
+			if (numero % i == 0) {
+				cantidadDivisores++;
+			}
 		}
 	}
-	
-	document.write(`La cantidad de divisores es de: ${contadorDivisores}`);
+
+	alert("Hay " + cantidadDivisores + " divisores entre el 1 y " + numero);
 }

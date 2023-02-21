@@ -1,3 +1,8 @@
+/*
+	Esteban Juan Amén
+		Div - F
+	Ejercicio 3 - switch;
+*/
 function mostrar() {
 	let mes;
 
@@ -5,10 +10,10 @@ function mostrar() {
 
 	switch (mes) {
 		case ("Febrero"):
-			alert (`Estamos en ${mes} y no tiene mas de 29 días.`);
+			alert("No tiene mas de 29 días.");
 			break;
 		default:
-			alert (`Estamos en ${mes} y tiene 30 o más días.`);
+			alert("Tiene 30 o más días.");
 			break;
 	}
 }

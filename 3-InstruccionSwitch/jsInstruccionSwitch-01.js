@@ -1,21 +1,41 @@
-function mostrar()
-{
+/*
+    Esteban Juan Amén
+        Div - F
+    Ejercicio 1 - switch;
+*/
+function mostrar() {
 	let mes;
 
 	mes = document.getElementById('txtIdMes').value;
 
+	// if (mes == "Enero") {
+	// 	alert("Que comiences bien el año!!!");
+	// } else {
+	// 	if (mes == "Marzo") {
+	// 		alert("A clases!!!");
+	// 	} else {
+	// 		if (mes == "Julio") {
+	// 			alert("Se vienen las vacaciones!!");
+	// 		} else {
+	// 			if (mes == "Diciembre") {
+	// 				alert("Felices fiestas!!!");
+	// 			}
+	// 		}
+	// 	}
+	// }
+
 	switch (mes) {
 		case "Enero":
-			alert (`Es ${mes}: que comiences bien el año!!`);
+			alert("Que comiences bien el año!!!");
 			break;
 		case "Marzo":
-			alert (`Es ${mes}: a clases!!`);
+			alert("A clases!!!");
 			break;
 		case "Julio":
-			alert (`Es ${mes}: se vienen las vacaciones!!`);
+			alert("Se vienen las vacaciones!!");
 			break;
 		case "Diciembre":
-			alert (`Es ${mes}: Felices fiestas!!`);
+			alert("Felices fiestas!!!");
 			break;
-		}
+	}
 }

@@ -1,22 +1,16 @@
-/*IF 7:
-Al ingresar una edad menor a 18 años
-y un estado civil distinto a "Soltero", mostrar el 
-siguiente mensaje: 'Es muy pequeño para NO ser soltero.'
+/*
+Esteban Juan Amén
+	Div - F
+Ejercicio 7 - IF;
 */
-function mostrar()
-{
-	var edad
-	var estadocivil
-	edad=document.getElementById('txtIdEdad').value;
-	edad=parseInt(edad);
-	estadocivil=document.getElementById('estadoCivil').value;
+function mostrar() {
+	let edad;
+	let estadoCivil;
 
-	if(edad<18)
-	{
-		if(estadocivil!=="Soltero")
-		{
-			alert("Es muy pequeño para NO ser soltero");
-		}
+	edad = parseInt(document.getElementById('txtIdEdad').value);
+	estadoCivil = document.getElementById('estadoCivil').value;
 
+	if (edad < 18 && estadoCivil != "Soltero") {
+		alert("Usted es muy pequeño para NO ser soltero!!")
 	}
 }

@@ -1,3 +1,8 @@
+/*
+	Esteban Juan Amén
+		Div - F
+	Ejercicio 2 - switch;
+*/
 function mostrar() {
 	let mes;
 
@@ -6,16 +11,16 @@ function mostrar() {
 	switch (mes) {
 		case "Julio":
 		case "Agosto":
-			alert (`Estamos en ${mes}: Abrigate que hace frio!!`);
+			alert("Abrigate que hace frio!!");
 			break;
 		case "Septiembre":
 		case "Octubre":
 		case "Noviembre":
 		case "Diciembre":
-			alert (`Estamos en ${mes}: Ya pasamos el frio, ahora calor!!`)
+			alert("Ya pasamos el frio, ahora calor!!");
 			break;
 		default:
-			alert (`Estamos en ${mes}: Falta poco para el invierno!!`);
+			alert("Falta poco para el invierno!!");
 			break;
 	}
 }

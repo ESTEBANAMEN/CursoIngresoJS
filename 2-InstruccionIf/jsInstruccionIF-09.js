@@ -1,12 +1,12 @@
-/*IF 9:
-ESTEBAN AMEN
-Al presionar el Botón, 
-mostrar un número Random del 1 al 10 inclusive
+/*
+Esteban Juan Amén
+	Div - F
+Ejercicio 9 - IF;
 */
-function mostrar()
-{
-	var aleatorio
-	aleatorio=Math.floor(Math.random() * 10) + 1;
+function mostrar() {
+	let numeroRandom;
 
-	alert("El numerito feo es "+aleatorio);
+	numeroRandom = Math.trunc(Math.random()*10 + 1);
+
+	alert(numeroRandom);
 }

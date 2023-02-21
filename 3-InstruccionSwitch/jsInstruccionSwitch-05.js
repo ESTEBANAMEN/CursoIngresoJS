@@ -1,10 +1,15 @@
+/*
+	Esteban Juan Amén
+		Div - F
+	Ejercicio 5 - switch;
+*/
 function mostrar() {
 	let hora;
 
 	hora = parseInt(document.getElementById('txtIdHora').value);
 
 	if (hora < 0 || hora > 24 || isNaN(hora)) {
-		alert (`ERROR!! "${hora}" no es un horario correcto!!`);
+		alert("No es un horario correcto!!");
 	}
 
 	switch (hora) {
@@ -13,12 +18,12 @@ function mostrar() {
 		case 9:
 		case 10:
 		case 11:
-			alert (`Colocó las ${hora} y es de mañana!!`);
+			alert("Es de mañana!!");
 			break;
 		default:
 			if (!(hora < 0 || hora > 24 || isNaN(hora))) {
-				alert (`Colocó las ${hora} y NO es de mañana!!`);
-				break;
+				alert("NO es de mañana!!");
 			}
+			break;
 	}
 }

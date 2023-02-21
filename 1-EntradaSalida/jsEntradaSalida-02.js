@@ -1,17 +1,12 @@
 /*
+Esteban Juan Amén
 Debemos lograr tomar un nombre con 'prompt' 
 y luego mostrarlo por 'alert' al presionar el botón  'mostrar'*/
-function mostrar()
-{
-	
-	var nombre;
-	var mensaje;
+function mostrar() {
 
-	//nombre="Esteban";
-	nombre=prompt("Ingrese su nombre");
-	mensaje="Su nombre es "+nombre;
+	let nombre;
 
-	alert(mensaje);
+	nombre = prompt("Ingrese su nombre:");
 
+	alert(nombre);
 }
-

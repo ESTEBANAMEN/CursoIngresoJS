@@ -1,3 +1,8 @@
+/*
+	Esteban Juan Amén
+		Div - F
+	Ejercicio 4 - switch;
+*/
 function mostrar() {
 	let mes;
 
@@ -5,16 +10,16 @@ function mostrar() {
 
 	switch (mes) {
 		case "Febrero":
-			alert (`El mes de ${mes} tiene 28 días (o 29 en caso de año bisiesto).`);
+			alert("Tiene 28 días (o 29 en caso de año bisiesto).");
 			break;
 		case "Abril":
 		case "Junio":
 		case "Septiembre":
 		case "Noviembre":
-			alert (`El mes de ${mes} tiene 30 días.`);
+			alert("Tiene 30 días.");
 			break;
 		default:
-			alert (`El mes de ${mes} tiene 31 días.`);
+			alert("Tiene 31 días.");
 			break;
 	}
 }
